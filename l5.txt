@@ -1,0 +1,58 @@
+PS D:\4JN24CS100\git5> git config --global user.name NehaK100
+PS D:\4JN24CS100\git5> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git5> git init
+Initialized empty Git repository in D:/4JN24CS100/git5/.git/
+PS D:\4JN24CS100\git5> git clone https://github.com/NehaK100/lab5.git
+Cloning into 'lab5'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+PS D:\4JN24CS100\git5> cd lab5
+PS D:\4JN24CS100\git5\lab5> git pull https://github.com/NehaK100/lab5.git
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 951 bytes | 73.00 KiB/s, done.
+From https://github.com/NehaK100/lab5
+ * branch            HEAD       -> FETCH_HEAD
+Updating f2ce2cd..5af3e4e
+Fast-forward
+ 1.html | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 1.html
+PS D:\4JN24CS100\git5\lab5> git checkout -b feature
+Switched to a new branch 'feature'
+PS D:\4JN24CS100\git5\lab5> git add 2.c
+PS D:\4JN24CS100\git5\lab5> git commit -m '2.c commited'
+[feature 97957d9] 2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.c
+PS D:\4JN24CS100\git5\lab5> git add 3.c
+PS D:\4JN24CS100\git5\lab5> git commit -m '3.c commited'
+[feature 33d62c9] 3.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.c
+PS D:\4JN24CS100\git5\lab5> git switch master
+fatal: invalid reference: master
+PS D:\4JN24CS100\git5\lab5> git rebase feature
+Current branch feature is up to date.
+PS D:\4JN24CS100\git5\lab5> git log --all --graph
+* commit 33d62c9670d3bf78ec218a904fbd56dd80ac4521 (HEAD -> feature)
+| Author: NehaK100 <nehakgit06@gmail.com>
+| Date:   Sun Jan 18 15:59:36 2026 +0530
+|
+|     3.c commited
+|
+* commit 97957d9302090a7fe5d845db81144f82b9378629
+| Author: NehaK100 <nehakgit06@gmail.com>
+| Date:   Sun Jan 18 15:59:24 2026 +0530
+|
+|     2.c commited
+|
+* commit 5af3e4eb51e35c6b246db1918082c93af8360e7a (main)
+| Author: NehaK100 <nehakgit06@gmail.com>
+| Date:   Sun Jan 18 15:57:46 2026 +0530
+:
