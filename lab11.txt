@@ -1,0 +1,52 @@
+PS D:\4JN24CS100\git11> git config --global user.name NehaK100                               
+PS D:\4JN24CS100\git11> git config --global user.email nehakgit06@gmail.com                  
+PS D:\4JN24CS100\git11> git init
+Initialized empty Git repository in D:/4JN24CS100/git11/.git/
+PS D:\4JN24CS100\git11> git add 1.c
+PS D:\4JN24CS100\git11> git commit -m '1.c commited'
+[master (root-commit) 981d733] 1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.c
+PS D:\4JN24CS100\git11> git add 2.c
+PS D:\4JN24CS100\git11> git commit -m '2.c commited'
+[master 3161dcd] 2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.c
+PS D:\4JN24CS100\git11> git add 3.c
+PS D:\4JN24CS100\git11> git commit -m '3.c commited'
+[master 7f39d0a] 3.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.c
+PS D:\4JN24CS100\git11> git add 4.c
+PS D:\4JN24CS100\git11> git commit -m '4.c commited'
+[master 0ab3376] 4.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.c
+PS D:\4JN24CS100\git11> git add 5.c
+PS D:\4JN24CS100\git11> git commit -m '5.c commited'
+[master 4330b2f] 5.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.c
+PS D:\4JN24CS100\git11> git log -n 5
+commit 4330b2fd27a6cf5466ee4ca40fd7b64cea434df8 (HEAD -> master)
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 17:05:24 2026 +0530
+
+    5.c commited
+
+commit 0ab3376c9e3cfc0de1c6cd920d72918dcf50401a
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 17:05:14 2026 +0530
+
+    4.c commited
+
+commit 7f39d0ab57aa8c0de8b0d09742b9c325d3e530e4
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 17:05:05 2026 +0530
+PS D:\4JN24CS100\git11> git log -n 5 --oneline
+4330b2f (HEAD -> master) 5.c commited
+0ab3376 4.c commited
+7f39d0a 3.c commited
+3161dcd 2.c commited
+981d733 1.c commited
+PS D:\4JN24CS100\git11> 
