@@ -1,0 +1,46 @@
+PS D:\4JN24CS100\git6> git init
+Initialized empty Git repository in D:/4JN24CS100/git6/.git/
+PS D:\4JN24CS100\git6> git add 1.c
+PS D:\4JN24CS100\git6> git commit -m '1.c commited'
+[master (root-commit) 1f150a9] 1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.c
+PS D:\4JN24CS100\git6> git checkout -b fb
+Switched to a new branch 'fb'
+PS D:\4JN24CS100\git6> git add 2.c
+PS D:\4JN24CS100\git6> git commit -m '2.c commited'
+[fb 8fc7a8c] 2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.c
+PS D:\4JN24CS100\git6> git add 3.c
+PS D:\4JN24CS100\git6> git commit -m '3.c commited'
+[fb cc66988] 3.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.c
+PS D:\4JN24CS100\git6> git switch master
+Switched to branch 'master'
+PS D:\4JN24CS100\git6> git merge fb -m 'fb is merged to master'
+Updating 1f150a9..cc66988
+Fast-forward (no commit created; -m option ignored)
+ 2.c | 0
+ 3.c | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.c
+ create mode 100644 3.c
+PS D:\4JN24CS100\git6> git log --all --graph
+* commit cc66988f529e3378d67e9ca4304e2d3689e947ff (HEAD -> master, fb)
+| Author: NehaK100 <nehakgit06@gmail.com>
+| Date:   Sun Jan 18 16:25:19 2026 +0530
+|
+|     3.c commited
+|
+* commit 8fc7a8ca737c3cf3c1b99244a2122bcc78e619ae
+| Author: NehaK100 <nehakgit06@gmail.com>
+| Date:   Sun Jan 18 16:25:03 2026 +0530
+|
+|     2.c commited
+|
+* commit 1f150a979f158b9abbe41757f8505c6ab77882c3
+  Author: NehaK100 <nehakgit06@gmail.com>
+  Date:   Sun Jan 18 16:24:13 2026 +0530
+:
