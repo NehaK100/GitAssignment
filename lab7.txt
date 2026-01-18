@@ -1,0 +1,55 @@
+PS D:\4JN24CS100\git7> git config --global user.name NehaK100
+PS D:\4JN24CS100\git7> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git7> git init
+Initialized empty Git repository in D:/4JN24CS100/git7/.git/
+PS D:\4JN24CS100\git7> git add 1.c
+PS D:\4JN24CS100\git7> git commit -m '1.c commited'
+[master (root-commit) 2d95f0c] 1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.c
+PS D:\4JN24CS100\git7> git add 2.c
+PS D:\4JN24CS100\git7> git commit -m '2.c commited'
+[master aa5dbd5] 2.c commited
+ 1 file changed, 1 insertion(+)
+ create mode 100644 2.c
+PS D:\4JN24CS100\git7> git tag v1.0
+PS D:\4JN24CS100\git7> git show v1.0
+commit aa5dbd52cffa18b65a9df6d5448d86264ace35e5 (HEAD -> master, tag: v1.0)
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 16:31:48 2026 +0530
+
+    2.c commited
+
+diff --git a/2.c b/2.c
+new file mode 100644
+index 0000000..6e60b8f
+--- /dev/null
++++ b/2.c
+@@ -0,0 +1 @@
++#include<stdio.h>
+\ No newline at end of file
+PS D:\4JN24CS100\git7> git add 2.c
+PS D:\4JN24CS100\git7> git commit -m '2.c updated and  commited'
+[master a49302c] 2.c updated and  commited
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+PS D:\4JN24CS100\git7> git tag v2.0
+PS D:\4JN24CS100\git7> git show v2.0
+commit a49302c786a8c420507f2eb6e0378ff85ca3acdf (HEAD -> master, tag: v2.0)
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 16:33:27 2026 +0530
+
+    2.c updated and  commited
+
+diff --git a/2.c b/2.c
+index 6e60b8f..0d76ce6 100644
+--- a/2.c
++++ b/2.c
+@@ -1 +1,5 @@
+-#include<stdio.h>
+\ No newline at end of file
++#include<stdio.h>
++void main()
++{
++   printf("Hello");
++}
+:
