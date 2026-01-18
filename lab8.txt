@@ -1,0 +1,65 @@
+PS D:\4JN24CS100\git8> git config --global user.name NehaK100
+PS D:\4JN24CS100\git8> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git8> git init
+Initialized empty Git repository in D:/4JN24CS100/git8/.git/
+PS D:\4JN24CS100\git8> git add 1.c
+PS D:\4JN24CS100\git8> git commit -m '1.c commited'
+[master (root-commit) aee1c5c] 1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.c
+PS D:\4JN24CS100\git8> git checkout -b fb
+Switched to a new branch 'fb'
+PS D:\4JN24CS100\git8> git add 2.c
+PS D:\4JN24CS100\git8> git commit -m '2.c commited'
+[fb cd07186] 2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.c
+PS D:\4JN24CS100\git8> git add 3.c
+PS D:\4JN24CS100\git8> git commit -m '3.c commited'
+[fb 3ea4c24] 3.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.c
+PS D:\4JN24CS100\git8> git add 4.c
+PS D:\4JN24CS100\git8> git commit -m '4.c commited'
+[fb 2748ce1] 4.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.c
+PS D:\4JN24CS100\git8> git add 5.c
+PS D:\4JN24CS100\git8> git commit -m '5.c commited'
+[fb e24b338] 5.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.c
+PS D:\4JN24CS100\git8> git add 6.c
+PS D:\4JN24CS100\git8> git commit -m '6.c commited'
+[fb a99e2b0] 6.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 6.c
+PS D:\4JN24CS100\git8> git switch master
+Switched to branch 'master'
+PS D:\4JN24CS100\git8> git log --oneline fb
+a99e2b0 (fb) 6.c commited
+e24b338 5.c commited
+2748ce1 4.c commited
+3ea4c24 3.c commited
+cd07186 2.c commited
+aee1c5c (HEAD -> master) 1.c commited
+PS D:\4JN24CS100\git8> git cherry-pick a99e
+[master 2e73fe1] 6.c commited
+ Date: Sun Jan 18 16:39:13 2026 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 6.c
+
+PS D:\4JN24CS100\git8> git cherry-pick 3ea4c24^..e24b338
+[master 12b0c3e] 3.c commited
+ Date: Sun Jan 18 16:38:44 2026 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.c
+[master d203b2e] 4.c commited
+ Date: Sun Jan 18 16:38:54 2026 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.c
+[master 31a11f3] 5.c commited
+ Date: Sun Jan 18 16:39:03 2026 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.c
+PS D:\4JN24CS100\git8> 
