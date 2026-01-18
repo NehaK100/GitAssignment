@@ -1,0 +1,40 @@
+PS D:\4JN24CS100\git10> git config --global user.name NehaK100
+PS D:\4JN24CS100\git10> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git10> git init
+Initialized empty Git repository in D:/4JN24CS100/git10/.git/
+PS D:\4JN24CS100\git10> git add jan.c
+PS D:\4JN24CS100\git10> git commit -m 'jan.c commited'
+[master (root-commit) 2f38022] jan.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jan.c
+PS D:\4JN24CS100\git10> git add jan1.c
+PS D:\4JN24CS100\git10> git commit -m 'jan1.c commited'
+[master 7486ca4] jan1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jan1.c
+PS D:\4JN24CS100\git10> git add jan2.c
+PS D:\4JN24CS100\git10> git commit -m 'jan2.c commited'
+[master 0c820c0] jan2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jan2.c
+PS D:\4JN24CS100\git10> git log --author "NehaK100" --since "2026-01-01" -until "2026-01-18"
+fatal: ambiguous argument '2026-01-18': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS D:\4JN24CS100\git10> git log --author "NehaK100" --since "2026-01-01" --until "2026-01-18"
+commit 0c820c08a10bdd1d3eb7413f275fcb667767fd1b (HEAD -> master)
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 16:58:34 2026 +0530
+
+    jan2.c commited
+
+commit 7486ca4bb59f0806df781bbdaeddd3380754d10b
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 16:57:40 2026 +0530
+
+    jan1.c commited
+
+commit 2f380221407c7d8cb8d9dd7f795205637e13aef0
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 16:55:09 2026 +0530
+:
