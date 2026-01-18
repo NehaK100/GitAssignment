@@ -1,0 +1,41 @@
+PS D:\4JN24CS100\git3> git config --global user.name NehaK100
+PS D:\4JN24CS100\git3> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git3> git init
+Initialized empty Git repository in D:/4JN24CS100/git3/.git/
+PS D:\4JN24CS100\git3> git add p1.c
+PS D:\4JN24CS100\git3> git commit -m 'p1.c commited'
+[master (root-commit) 24ccd29] p1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p1.c
+PS D:\4JN24CS100\git3> git add p2.c
+PS D:\4JN24CS100\git3> git stash -m 'p2.c stashed'
+Saved working directory and index state On master: p2.c stashed
+PS D:\4JN24CS100\git3> git add p3.c
+PS D:\4JN24CS100\git3> git stash -m 'p3.c stashed'
+Saved working directory and index state On master: p3.c stashed
+PS D:\4JN24CS100\git3> git add p4.c
+PS D:\4JN24CS100\git3> git stash -m 'p4.c stashed'
+Saved working directory and index state On master: p4.c stashed
+PS D:\4JN24CS100\git3> git checkout -b feature
+Switched to a new branch 'feature'
+PS D:\4JN24CS100\git3> git stash list
+stash@{0}: On master: p4.c stashed
+stash@{1}: On master: p3.c stashed
+stash@{2}: On master: p2.c stashed
+PS D:\4JN24CS100\git3> git stash apply 0
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   p4.c
+
+PS D:\4JN24CS100\git3> git stash pop  
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   p4.c
+
+Dropped refs/stash@{0} (a4b32012d46196d145c13f4103404f18cc19aa65)
+PS D:\4JN24CS100\git3> git stash list
+stash@{0}: On master: p3.c stashed
+stash@{1}: On master: p2.c stashed
+PS D:\4JN24CS100\git3> 

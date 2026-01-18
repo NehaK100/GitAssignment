@@ -1,0 +1,44 @@
+PS D:\4JN24CS100\git2> git config --global user.name NehaK100
+PS D:\4JN24CS100\git2> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git2> git init
+Initialized empty Git repository in D:/4JN24CS100/git2/.git/
+PS D:\4JN24CS100\git2> git add pi.c
+PS D:\4JN24CS100\git2> git commit -m 'pi.c commited'
+[master (root-commit) f496185] pi.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pi.c
+PS D:\4JN24CS100\git2> git add p2.c
+PS D:\4JN24CS100\git2> git commit -m 'p2.c commited'
+[master 98c8280] p2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p2.c
+PS D:\4JN24CS100\git2> git checkout -b feature
+Switched to a new branch 'feature'
+PS D:\4JN24CS100\git2> git add p3.c
+PS D:\4JN24CS100\git2> git commit -m 'p3.c commited'
+[feature 1f61a7a] p3.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p3.c
+PS D:\4JN24CS100\git2> git add p4.c
+PS D:\4JN24CS100\git2> git commit -m 'p4.c commited'
+[feature 3e8961a] p4.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p4.c
+PS D:\4JN24CS100\git2> git add p5.c
+PS D:\4JN24CS100\git2> git commit -m 'p5.c commited'
+[feature 04cb1d2] p5.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p5.c
+PS D:\4JN24CS100\git2> git switch master
+Switched to branch 'master'
+PS D:\4JN24CS100\git2> git merge feature
+Updating 98c8280..04cb1d2
+Fast-forward
+ p3.c | 0
+ p4.c | 0
+ p5.c | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p3.c
+ create mode 100644 p4.c
+ create mode 100644 p5.c
+PS D:\4JN24CS100\git2>

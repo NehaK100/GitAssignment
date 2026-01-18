@@ -1,0 +1,15 @@
+PS D:\4JN24CS100\git1> git config --global user.name NehaK100
+PS D:\4JN24CS100\git1> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git1> git init
+Initialized empty Git repository in D:/4JN24CS100/git1/.git/
+PS D:\4JN24CS100\git1> git add p1.c
+PS D:\4JN24CS100\git1> git commit -m 'p1.c commited'
+[master (root-commit) 47e2dd3] p1.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p1.c
+PS D:\4JN24CS100\git1> git add p2.c
+PS D:\4JN24CS100\git1> git commit -m 'p2.c commited'
+[master 8700d79] p2.c commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p2.c
+PS D:\4JN24CS100\git1> 
