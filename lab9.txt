@@ -1,0 +1,45 @@
+PS D:\4JN24CS100\git9> git config --global user.name NehaK100
+PS D:\4JN24CS100\git9> git config --global user.email nehakgit06@gmail.com
+PS D:\4JN24CS100\git9> git init
+Initialized empty Git repository in D:/4JN24CS100/git9/.git/
+PS D:\4JN24CS100\git9> git add 1.py
+PS D:\4JN24CS100\git9> git commit -m '1.py commited'
+[master (root-commit) 5a076d7] 1.py commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.py
+PS D:\4JN24CS100\git9> git add 2.py
+PS D:\4JN24CS100\git9> git commit -m '2.py commited'
+[master 78c4037] 2.py commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.py
+PS D:\4JN24CS100\git9> git add 3.py
+PS D:\4JN24CS100\git9> git commit -m '3.py commited'
+[master 7ab7541] 3.py commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.py
+PS D:\4JN24CS100\git9> git add 4.py
+PS D:\4JN24CS100\git9> git commit -m '4.py commited'
+[master 6e962a4] 4.py commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.py
+PS D:\4JN24CS100\git9> git add 5.py
+PS D:\4JN24CS100\git9> git commit -m '5.py commited'
+[master 331a1d3] 5.py commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.py
+PS D:\4JN24CS100\git9> git show 7ab7541
+commit 7ab75414f4e3122f3f407bb715805d6530a7f471
+Author: NehaK100 <nehakgit06@gmail.com>
+Date:   Sun Jan 18 16:48:50 2026 +0530
+
+    3.py commited
+
+diff --git a/3.py b/3.py
+new file mode 100644
+index 0000000..e69de29
+PS D:\4JN24CS100\git9> git log -n 4 --pretty=format:'%h-%an,%ar:%s'
+331a1d3-NehaK100,2 minutes ago:5.py commited
+6e962a4-NehaK100,2 minutes ago:4.py commited
+7ab7541-NehaK100,2 minutes ago:3.py commited
+78c4037-NehaK100,2 minutes ago:2.py commited
+PS D:\4JN24CS100\git9> 
